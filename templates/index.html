@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clustering Stocks</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clustering Stocks</h1>
+        <p>Insert the stock ticker to be fit in a cluster:</p>
+        <form action="/process_data" method="POST">
+            <input type="text" name="input_data" placeholder="Enter ticker">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
