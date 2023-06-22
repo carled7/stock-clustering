@@ -11,7 +11,11 @@
       justify-content: center;
     }
     
-    .container {
+    .container > div > img{
+      width: 30vw;
+    }
+
+    .container > h1, .container > p{
       text-align: center;
     }
   </style>
@@ -19,7 +23,11 @@
 <body>
   <div class="container">
     <h1>{{ticker}}</h1>
-    <img src="{{ url_for('static', filename='chart.jpg') }}" alt="Centered Image">
+    <div>
+      <img src="{{ url_for('static', filename='chart.jpg') }}" >
+      <img src="{{ url_for('static', filename='chart2.jpg') }}" >
+      <img src="{{ url_for('static', filename='chart3.jpg') }}" >
+    </div>
     <p>{{ticker}} has been clustered in the <strong>{{cluster}}</strong> cluster.</p>
   </div>
 </body>
